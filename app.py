@@ -18,4 +18,4 @@ st.header("Skills")
 st.write("- Python\n- Streamlit\n- GitHub")
 
 st.header("Contact")
-st.write("Email: your-email@example.com")
+st.write("Email: jazkaymagbanuacaingles@gmail.com")
