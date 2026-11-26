@@ -15,7 +15,7 @@ st.header("About Me")
 st.write("A Mechanical Engineering student who enjoys learning new things and working hard to achieve my goals")
 
 st.header("Skills")
-st.write("- Python\n- Streamlit\n- GitHub")
+st.write("- Problem-solving\n- Basic Mechanical Knowledge\n- CAD (SolidWorks)\n- Technical Drawing\n- Teamwork and Collaboration\n- Communication\n- Time Management")
 
 st.header("Contact")
 st.write("Email: jazkaymagbanuacaingles@gmail.com")
