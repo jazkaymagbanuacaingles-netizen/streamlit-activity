@@ -278,7 +278,12 @@ with tab3:
     st.subheader("🧮 Interactive Engineering Tools")
     st.write("Two calculators I built with Python. Change the numbers and watch the results update.")
 
-    tool = st.radio("Choose a tool", ["Beam Deflection", "Gear Ratio"], horizontal=True)
+   tool = st.radio(
+    "Choose a tool",
+    ["Beam Deflection", "Gear Ratio"],
+    horizontal=True,
+    key="engineering_tool_selector"
+)
 
     if tool == "Beam Deflection":
         st.markdown("**Simply supported beam with a load at the center (rectangular cross-section)**")
