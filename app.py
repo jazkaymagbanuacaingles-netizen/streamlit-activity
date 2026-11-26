@@ -154,7 +154,7 @@ with tab3:
 
         m1, m2, m3 = st.columns(3)
         m1.metric("Max Deflection", f"{delta * 1000:.2f} mm")
-        m2.metric("Max Bending Moment", f"{M:.0f} N·m")import streamlit as st
+        m2.metric("Max Bending Moment", f"{M:.0f} N·m")
 import pandas as pd
 import numpy as np
 
