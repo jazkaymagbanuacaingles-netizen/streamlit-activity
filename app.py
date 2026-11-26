@@ -206,7 +206,12 @@ SKILLS
 - Communication
 - Time Management
 """
-    st.download_button("📄 Download Resume", resume, file_name="Jazkay_Resume.txt")
+    st.download_button(
+    "📄 Download Resume",
+    resume,
+    file_name="Jazkay_Resume.txt",
+    key="download_resume_btn"
+)
 
 # ---------- HERO ----------
 st.markdown("""
