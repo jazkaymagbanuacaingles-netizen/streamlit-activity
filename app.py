@@ -60,9 +60,9 @@ with tab1:
         unsafe_allow_html=True,
     )
     c1, c2, c3 = st.columns(3)
-    c1.metric("Course", "BS Mechanical Eng.")
+    c1.metric("Course", "Bachelor of Science in Mechanical Engineering.")
     c2.metric("Favorite Tool", "SolidWorks")
-    c3.metric("Goal", "Future Engineer")
+    c3.metric("Goal", "Future RME")
 
 with tab2:
     st.subheader("Technical Skills")
