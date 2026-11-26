@@ -1,19 +1,21 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
 
-st.header("Jazkay Magbanua Caingles")
+st.set_page_config(page_title="My Profile", page_icon="👤")
 
-st.write("Welcome to my first Streamlit app!")
+col1, col2 = st.columns([1, 2])
 
-name = st.text_input("What's your name?")
-if name:
-    st.success(f"Hello, {name}!")
+with col1:
+    st.image("jazkay.jpg.png", width=200)
 
-st.subheader("Sample Data")
-df = pd.DataFrame(np.random.randn(20, 3), columns=["A", "B", "C"])
-st.dataframe(df)
-st.line_chart(df)
+with col2:
+    st.title("Jazkay Magbanua Caingles")
+    st.write("Student | Aspiring Developer")
 
-num = st.slider("Pick a number", 0, 100, 25)
-st.write("You picked:", num)
+st.header("About Me")
+st.write("A Mechanical Engineering student who enjoys learning new things and working hard to achieve my goals..")
+
+st.header("Skills")
+st.write("- Python\n- Streamlit\n- GitHub")
+
+st.header("Contact")
+st.write("Email: your-email@example.com")
