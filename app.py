@@ -278,7 +278,12 @@ with tab3:
     st.subheader("🧮 Interactive Engineering Tools")
     st.write("Two calculators I built with Python. Change the numbers and watch the results update.")
 
-   tool = st.radio(
+      tool = st.radio(
+        "Choose a tool",
+        ["Beam Deflection", "Gear Ratio"],
+        horizontal=True,
+        key="engineering_tool_selector"
+    )
     "Choose a tool",
     ["Beam Deflection", "Gear Ratio"],
     horizontal=True,
