@@ -66,8 +66,8 @@ st.markdown("""
 st.write("")
 
 # ---------- TABS ----------
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
-    ["👩‍🎓 About", "🛠️ Skills", "🧮 Engineering Tools", "🖼️ Gallery", "📁 Projects", "📬 Contact"]
+tab1, tab2, tab3, tab4, tab5 = st.tabs(
+    ["👩‍🎓 About", "🛠️ Skills", "🧮 Engineering Tools", "📁 Projects", "📬 Contact"]
 )
 
 # ===== ABOUT =====
@@ -91,7 +91,7 @@ with tab1:
     st.write("")
     c1, c2 = st.columns(2)
     c1.metric("Favorite Tool", "SolidWorks")
-    c2.metric("Goal", "Future RME")
+    c2.metric("Goal", "Future Engineer")
 
     st.subheader("🎓 My Journey")
     st.markdown("""
@@ -190,19 +190,8 @@ with tab3:
         else:
             st.info("1:1 ratio: speed and torque stay the same.")
 
-# ===== GALLERY =====
-with tab4:
-    st.subheader("🖼️ Mechanical Engineering & Design Gallery")
-    g1, g2 = st.columns(2)
-    with g1:
-        st.image("gears.png", caption="Gear train: transmitting motion and torque", use_container_width=True)
-    with g2:
-        st.image("piston_crank.png", caption="Piston-crank mechanism: turning linear motion into rotation", use_container_width=True)
-    st.image("technical_drawing.png", caption="Technical drawing: flange coupling with dimensions", use_container_width=True)
-    st.info("Tip: add screenshots of my own SolidWorks models here.")
-
 # ===== PROJECTS =====
-with tab5:
+with tab4:
     st.subheader("📁 Projects")
     with st.expander("🌐 Personal Profile Web App (this page!)", expanded=True):
         st.write("Built with Python and Streamlit, version controlled on GitHub, and deployed on Streamlit Community Cloud.")
@@ -214,7 +203,7 @@ with tab5:
         st.write("Describe a team project and your role in it.")
 
 # ===== CONTACT =====
-with tab6:
+with tab5:
     st.subheader("Let's connect!")
     st.markdown(f'<div class="card">📧 {EMAIL}</div>', unsafe_allow_html=True)
     st.markdown(f'<div class="card">💻 GitHub: <a href="{GITHUB}">{GITHUB}</a></div>', unsafe_allow_html=True)
